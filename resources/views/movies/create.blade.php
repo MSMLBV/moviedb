@@ -45,8 +45,8 @@
                             <div class="row">
                                 <div class="col-sm-8"></div>
                                 <div class="col-sm-4">
-                                    <input type="button" class="btn btn-link" value="Annuleer"/>
-                                    <input type="submit" class="btn btn-success" value="Opslaan"/>
+                                    <input type="button" class="btn btn-link" value="Cancel"/>
+                                    <input type="submit" class="btn btn-success" value="Save"/>
                                 </div>
                             </div>
                         </div>
