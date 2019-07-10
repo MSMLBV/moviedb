@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/movies');
 });
+
+Auth::routes();
+
+Route::resource('/movies', 'MovieController');
+
+Route::get('/home', 'HomeController@index')->name('home');
