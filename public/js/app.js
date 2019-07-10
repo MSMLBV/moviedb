@@ -61750,9 +61750,132 @@ if (document.getElementById('example')) {
   !*** ./resources/js/components/Search.js ***!
   \*******************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\joost\\Documents\\websites\\moviedb\\resources\\js\\components\\Search.js: Support for the experimental syntax 'classProperties' isn't currently enabled (5:11):\n\n\u001b[0m \u001b[90m 3 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 4 | \u001b[39m\u001b[36mexport\u001b[39m \u001b[36mdefault\u001b[39m \u001b[36mclass\u001b[39m \u001b[33mSearch\u001b[39m \u001b[36mextends\u001b[39m \u001b[33mComponent\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 | \u001b[39m    state \u001b[33m=\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m   | \u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 6 | \u001b[39m        movies\u001b[33m:\u001b[39m []\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 7 | \u001b[39m        movie\u001b[33m:\u001b[39m \u001b[32m\"\"\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 8 | \u001b[39m    }\u001b[0m\n\nAdd @babel/plugin-proposal-class-properties (https://git.io/vb4SL) to the 'plugins' section of your Babel config to enable transformation.\n    at Object.raise (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:6325:17)\n    at Object.expectPlugin (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:7647:18)\n    at Object.parseClassProperty (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:10830:12)\n    at Object.pushClassProperty (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:10795:30)\n    at Object.parseClassMemberWithIsStatic (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:10734:14)\n    at Object.parseClassMember (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:10668:10)\n    at withTopicForbiddingContext (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:10623:14)\n    at Object.withTopicForbiddingContext (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:9702:14)\n    at Object.parseClassBody (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:10600:10)\n    at Object.parseClass (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:10574:22)\n    at Object.parseExportDefaultExpression (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:10999:19)\n    at Object.parseExport (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:10905:31)\n    at Object.parseStatementContent (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:9933:27)\n    at Object.parseStatement (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:9829:17)\n    at Object.parseBlockOrModuleBlockBody (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:10405:25)\n    at Object.parseBlockBody (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:10392:10)\n    at Object.parseTopLevel (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:9758:10)\n    at Object.parse (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:11270:17)\n    at parse (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\parser\\lib\\index.js:11306:38)\n    at parser (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:170:34)\n    at normalizeFile (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:138:11)\n    at runSync (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\core\\lib\\transformation\\index.js:44:43)\n    at runAsync (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\core\\lib\\transformation\\index.js:35:14)\n    at process.nextTick (C:\\Users\\joost\\Documents\\websites\\moviedb\\node_modules\\@babel\\core\\lib\\transform.js:34:34)\n    at processTicksAndRejections (internal/process/next_tick.js:74:9)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Search; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+var Search =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Search, _Component);
+
+  function Search() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, Search);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Search)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      movies: [],
+      movie: ""
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onChangeFilter", function (event) {
+      var res = _this.state.movies.filter(function (movie) {
+        return movie.title.toLowerCase().indexOf(event.target.value.toLowerCase()) !== -1;
+      });
+
+      _this.setState({
+        filter: res
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "show", function () {
+      if (_this.state.filter) {
+        if (_this.state.filter.length === 0) {
+          return "Niks gevonden";
+        }
+
+        return _this.state.filter.map(function (opt) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: window.location.origin + "/movies/" + opt.id
+          }, opt.title));
+        });
+      }
+    });
+
+    return _this;
+  }
+
+  _createClass(Search, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var base_url = window.location.origin;
+      fetch('/get/movies').then(function (response) {
+        return response.json();
+      }).then(function (responseJSON) {
+        _this2.setState({
+          movies: responseJSON
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        className: "form-inline my-2 my-lg-0"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        onChange: function onChange(e) {
+          return _this3.onChangeFilter(e);
+        },
+        className: "form-control mr-sm-2",
+        type: "search",
+        placeholder: "Search",
+        "aria-label": "Search"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "btn btn-outline-success my-2 my-sm-0",
+        type: "submit"
+      }, "Search")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.show()));
+    }
+  }]);
+
+  return Search;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+if (document.getElementById('search')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Search, null), document.getElementById('search'));
+}
 
 /***/ }),
 

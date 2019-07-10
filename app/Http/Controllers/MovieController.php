@@ -19,7 +19,7 @@ class MovieController extends Controller
     public function index()
     {
         $movies = DB::table('movies')->paginate(2);
-        return view('movies.index')->with("movies", $movies);
+        return view('movies.index')->with('movies', $movies);
     }
 
     /**
@@ -52,7 +52,7 @@ class MovieController extends Controller
         $movie->image = $path;
         $movie->save();
 
-        return redirect("/movies");
+        return redirect('/movies');
     }
 
     /**
@@ -63,7 +63,7 @@ class MovieController extends Controller
      */
     public function show(Movie $movie)
     {
-        return view("movies.show")->with('movie', $movie);
+        return view('movies.show')->with('movie', $movie);
     }
 
     /**
@@ -102,6 +102,7 @@ class MovieController extends Controller
 
     public function getMovies()
     {
-        return response()->json(Movie::all());
+        $movies = Movie::all();
+        return response()->json($movies);
     }
 }

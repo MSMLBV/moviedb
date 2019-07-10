@@ -12,6 +12,6 @@ class Movie extends Model implements HasMedia
 
     public function genre()
     {
-        return $this->hasOne("App/Genre");
+        return $this->belongsTo(Genre::class);
     }
 }

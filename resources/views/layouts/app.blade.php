@@ -81,15 +81,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto justify-content-center">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/movies"><i class="fas fa-home"></i> Movies</a>
+                        <a class="nav-link" href="{{url('/movies')}}"><i class="fas fa-home"></i> Movies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/movies/create"><i class="fas fa-plus-circle"></i> Add movie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/search"><i class="fas fa-search"></i> Search</a>
+                        <a class="nav-link" href="{{url('/movies/create')}}"><i class="fas fa-plus-circle"></i> Add movie</a>
                     </li>
                 </ul>
+                <div id="search"></div>
             </div>
         </div>
     </nav>
