@@ -14,7 +14,7 @@ class AddForeignKeys extends Migration
     public function up()
     {
         Schema::table('movies', function (Blueprint $table){
-            $table->bigInteger('genre_id')->unsigned();
+            $table->bigInteger('genre_id')->unsigned()->index();
             $table->foreign('genre_id')->references('id')->on('genres');
         });
     }
