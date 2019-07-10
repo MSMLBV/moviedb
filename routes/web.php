@@ -18,5 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::resource('/movies', 'MovieController');
+Route::get('/get/movies', 'MovieController@getMovies');
+Route::get('/search', function (){
+    return view('search');
+});
 
 Route::get('/home', 'HomeController@index')->name('home');

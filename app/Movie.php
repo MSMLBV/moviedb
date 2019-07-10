@@ -10,5 +10,8 @@ class Movie extends Model implements HasMedia
 {
     use HasMediaTrait;
 
-
+    public function genre()
+    {
+        return $this->hasOne("App/Genre");
+    }
 }

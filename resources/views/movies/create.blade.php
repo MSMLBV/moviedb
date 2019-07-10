@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <form action="/movies" method="post">
+                <form action="/movies" enctype="multipart/form-data" method="post">
                     <div class="card">
                         <div class="card-header">Movie</div>
 
@@ -25,6 +25,12 @@
                                             <option value="{{$genre->id}}">{{$genre->name}}</option>
                                         @endforeach
                                     </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-2 col-form-label-sm" for="dur">Duration (Minutes)</label>
+                                <div class="col-sm-10">
+                                    <input id="dur" name="dur" class="form-control" type="number"/>
                                 </div>
                             </div>
                             <div class="row form-group">

@@ -6,6 +6,8 @@ use App\Genre;
 use App\Movie;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class MovieController extends Controller
 {
@@ -16,7 +18,8 @@ class MovieController extends Controller
      */
     public function index()
     {
-        return view('movies.index');
+        $movies = DB::table('movies')->paginate(2);
+        return view('movies.index')->with("movies", $movies);
     }
 
     /**
@@ -38,7 +41,18 @@ class MovieController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $movie = new Movie();
+        $movie->title = $request->title;
+        $movie->genre_id = $request->genre;
+        $movie->minutes = $request->dur;
+        $movie->plot = $request->plot;
+
+        $request->img->store('images', 'public');
+        $path = $request->img->store('images', 'public');
+        $movie->image = $path;
+        $movie->save();
+
+        return redirect("/movies");
     }
 
     /**
@@ -49,7 +63,7 @@ class MovieController extends Controller
      */
     public function show(Movie $movie)
     {
-        //
+        return view("movies.show")->with('movie', $movie);
     }
 
     /**
@@ -84,5 +98,10 @@ class MovieController extends Controller
     public function destroy(Movie $movie)
     {
         //
+    }
+
+    public function getMovies()
+    {
+        return response()->json(Movie::all());
     }
 }
